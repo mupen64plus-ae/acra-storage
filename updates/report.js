@@ -84,7 +84,7 @@ var addReportSignature = function(report) {
         if(stack.length > 1) {
             var exceptionName =  stack[0];
             var faultyLine = stack[1];
-            var applicationPackage = report.PACKAGE_NAME;
+            var applicationPackage = "paulscode.android.mupen64plus";
             for(var line in stack) {
                 if(stack[line].indexOf('at ' + applicationPackage) >= 0) {
                     faultyLine = stack[line];

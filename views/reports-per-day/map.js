@@ -4,7 +4,7 @@ function(doc) {
         if(isNaN(crashDate.getTime())) {
             crashDate = doc.timestamp;
         }
-        if(crashDate.getFullYear() > 2000) {
+        if(crashDate.getFullYear() > 2012) {
             emit([crashDate.getFullYear(), crashDate.getMonth() , crashDate.getDate(), crashDate.getHours(), crashDate.getMinutes(), crashDate.getSeconds(), crashDate.getMilliseconds()], 1);
         }
     }
